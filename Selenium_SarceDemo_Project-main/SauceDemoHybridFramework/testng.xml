@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<parameter name="browsername" value="chrome"/>
+
+<listeners>
+<listener class-name="UtilityLayer.ListenerSetUp"></listener>
+<listener class-name="UtilityLayer.AnnotationTransformerSetUp"></listener>
+
+</listeners>
+  <test thread-count="5" name="Test">
+    <classes>
+      <class name="TestLayer.LoginPageTest"/>
+            <class name="TestLayer.AddToCartPageTest"/>
+                  <class name="TestLayer.PersonalPageTest"/>
+                        <class name="TestLayer.FinishPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
