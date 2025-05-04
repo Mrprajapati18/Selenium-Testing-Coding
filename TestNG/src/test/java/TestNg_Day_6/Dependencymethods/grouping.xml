@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="groupingsuite"> 
+   <test name="groupingtests">
+      <classes> 
+         <class name="TestNg_Day_6.Dependencymethods.loginTest"/>
+         <class name="TestNg_Day_6.Dependencymethods.signUpTest"/>
+         <class name="TestNg_Day_6.Dependencymethods.paymentTests"/>  
+      </classes>
+   </test>
+</suite>
